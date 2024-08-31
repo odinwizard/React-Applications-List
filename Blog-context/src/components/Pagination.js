@@ -8,9 +8,10 @@ const Pagination = () => {
     const {page, handlePageChange, totalPages} = useContext(AppContext);
 
     return ( 
-        <div className="w-full flex justify-center items-center border-2 fixed bottom-0 bg-white">
-            <div className=" flex justify-between max-w-[670px] w-11/12 py-2">
-            <div className=" flex gap-x-2">
+        <div className='w-full flex fixed bottom-0 bg-bgColor text-textColor justify-center shadow-footer-shadow py-2 transition-all ease-in-out duration-700 '>
+        
+            <div className='flex w-10/12 max-w-[670px] justify-between '>
+            <div className='flex gap-x-4'>
             { page > 1 &&
                     <button
                     className=" rounded-md border-2 px-4 py-1"
